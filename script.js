@@ -142,7 +142,7 @@ const Utils = {
     formatAmount(value) {
         value = Number(value) * 100
 
-        return value
+        return Math.round(value)  //Usando o Math.round() para arredonda o número que foi passado como argumento.
     },
 
     formatDate(date) {
